@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/info.css">
+  <title>Your Page Title</title>
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="back-button" onclick="goBack()">&#129044; Back</a>
+
+    <div class="image-container">
+      <div class="image-wrapper">
+        <img src="img/info1.jpg" alt="Image 1" class="image">
+        <div class="caption">Capturing the beauty of the moment.</div>
+        <div class="comment-section" id="commentSection1">
+          <span class="comment-icon" onclick="toggleCommentSection(1)">&#128172;</span>
+          <textarea id="commentInput1" placeholder="Add your comment..."></textarea>
+          <button onclick="postComment(1)">Post</button>
+          <div id="comments1" class="comments"></div>
+        </div>
+      </div>
+
+      <div class="image-wrapper">
+        <img src="img/event2.jpg" alt="Image 2" class="image">
+        <div class="caption">Exploring nature's wonders.</div>
+        <div class="comment-section" id="commentSection2">
+          <span class="comment-icon" onclick="toggleCommentSection(2)">&#128172;</span>
+          <textarea id="commentInput2" placeholder="Add your comment..."></textarea>
+          <button onclick="postComment(2)">Post</button>
+          <div id="comments2" class="comments"></div>
+        </div>
+      </div>
+
+      <div class="image-wrapper">
+        <img src="img/event3.jpg" alt="Image 3" class="image">
+        <div class="caption">Sunset dreams and reflections.</div>
+        <div class="comment-section" id="commentSection3">
+          <span class="comment-icon" onclick="toggleCommentSection(3)">&#128172;</span>
+          <textarea id="commentInput3" placeholder="Add your comment..."></textarea>
+          <button onclick="postComment(3)">Post</button>
+          <div id="comments3" class="comments"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/info.js"></script>
+</body>
+</html>
